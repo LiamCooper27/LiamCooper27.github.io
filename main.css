@@ -11,9 +11,6 @@ body {
 }
 
 .header {
-    /*background-color: #0E7BE8;
-    /*box-shadow: 0px 1px 5px #A0A0A0;*/
-    /* Set the navbar to fixed position */
     top: 0;
     width: 100%;
     background-color: black;
@@ -46,7 +43,6 @@ body {
 
 .card {
     background-color: #C5C5C5;
-    /*border: 5px black;*/
 }
 
 .top-of-page {
@@ -66,40 +62,17 @@ body {
     background-color: black;
 }
 
-.navbar .navbar-nav > .nav-item > a,
+/*.navbar .navbar-nav > .nav-item > a,
 .navbar .navbar-nav > .nav-item > a:hover,
 .navbar .navbar-nav > .nav-item > a:focus,
 .navbar .navbar-nav > .nav-item > a:active {
-    /*border-bottom: 1px solid white;*/
+    border-bottom: 1px solid white;
 }
 
 .navbar .navbar-nav > .nav-item > a:hover {
-    /*border-bottom: 1px solid #7f7f7f;*/
+    border-bottom: 1px solid #7f7f7f;
 }
-
-/*.nav-item {
-    padding-right: 10px;
-}
-
-.navbar {
-    margin: 0;
-}
-
-.navbar-brand {
-    font-size: 30px;
-}
-
-.nav-link {
-    font-size: 20px;
-    color: black;
-}*/
-
-/*.footer {
-    padding-top: 10px;
-    background-color: #0000a7;
-    color: white;
-    margin-bottom: 0;
-}*/
+*/
 
 .section-heading {
     width: 100%;
@@ -117,15 +90,7 @@ body {
 }
 
 .content-section1, .content-section2, .content-section3 {
-    /*margin-bottom: 64px;*/
     padding-top: 56px;
-    /*padding-top: 56px;
-    /*box-shadow: 0px 1px 5px #A0A0A0;
-	/*border-top-right-radius: 15px 10px;
-	border-top-left-radius: 15px 10px;
-	border-bottom-right-radius: 15px 10px;
-	border-bottom-left-radius: 15px 10px;
-    margin-bottom: 100px;*/
 }
 
 .content-section3 {
@@ -133,12 +98,10 @@ body {
 }
 
 .jumbotron {
-    /*background-color: #cfecff;*/
     background-color: #d3d3d3;
     margin-bottom: 0px;
     padding-bottom: 64px;
     padding-top: 120px;
-
 }
 
 .content-divider {
@@ -161,7 +124,6 @@ body {
     margin-right: 10px;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.9;
     text-decoration: none;
@@ -178,7 +140,6 @@ body {
     color: #7f7f7f;
 }
 
-/* Twitter */
 .fa-twitter {
     background: black;
     color: #7f7f7f;
