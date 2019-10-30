@@ -1,28 +1,34 @@
-$(document).ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
-				e.preventDefault(); // prevent hard jump, the default behavior
+function fnValidateForm() {
 
-				var target = $(this).attr("href"); // Set the target as variable
+	var errorMsg = "";
 
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
+	var isEverythingOkay = true;
 
-				return false;
-		});
-});
+	var name = document.forms.testform.sendername.value;
+	if (name.length < 2 || name.length > 40) {
+		isEverythingOkay = false;
+		errorMsg += '<p>*Name = Invalid data entered</p>';
+	}
 
-$(window).scroll(function() {
-		var scrollDistance = $(window).scrollTop();
+	var email = document.forms.testform.email.value;
+	var atindex = email.indexOf("@");
+	var dotindex = email.lastIndexOf(".");
+	if (atindex < 1 || dotindex <= atindex) {
+		isEverythingOkay = false;
+		errorMsg += '<p>*Email = Invalid data entered</p>';
+	}
 
-		// Assign active class to nav links while scolling
-		$('.page-section').each(function(i) {
-				if ($(this).position().top <= scrollDistance) {
-						$('.navigation a.active').removeClass('active');
-						$('.navigation a').eq(i).addClass('active');
-				}
-		});
-}).scroll();
+	var message = document.forms.testform.message.value;
+	if (message.length < 2) {
+		isEverythingOkay = false;
+		errorMsg += '<p>*Message = Invalid data entered</p>';
+	}
+
+	if (!isEverythingOkay) {
+		document.getElementById("error").style.visibility = "visible";
+		document.getElementById("error").style.display = "block";
+		document.getElementById("error").innerHTML = errorMsg;
+	}
+
+	return isEverythingOkay;
+}
