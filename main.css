@@ -244,3 +244,8 @@ div.buttongroup {
 	border: 1px solid #990000;
 	color: white;
 }
+
+#footer-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
