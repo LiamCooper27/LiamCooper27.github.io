@@ -1,4 +1,4 @@
-function fnValidateForm() {
+/*function fnValidateForm() {
 
 	var errorMsg = "";
 
@@ -31,7 +31,7 @@ function fnValidateForm() {
 	}
 
 	return isEverythingOkay;
-}
+}*/
 
 function btnChange() {
 	var btnOne = document.getElementById('btnOne');
