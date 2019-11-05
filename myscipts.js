@@ -32,3 +32,12 @@ function fnValidateForm() {
 
 	return isEverythingOkay;
 }
+
+function btnChange() {
+	var btnOne = document.getElementById('btnOne');
+	if (btnOne.value === "See More >") {
+		btnOne.value = 'See less <';
+	} else {
+		btnOne.value = 'See More >';
+	}
+}
