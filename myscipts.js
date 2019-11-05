@@ -36,10 +36,10 @@
 function btnChange() {
 	var btnOne = document.getElementById('btnOne');
 	//btnOne.value = 'it works';
-	if (btnOne.value == "See More >") {
-		btnOne.value = 'See less <';
-		btnOne.innerText = 'works!!!!!!'
+	if (btnOne.innerText == "See More >") {
+		//btnOne.value = 'See less <';
+		btnOne.innerText = 'See less <'
 	} else {
-		btnOne.value = 'See More >';
+		btnOne.innerText = 'See More >';
 	}
 }
