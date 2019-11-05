@@ -35,9 +35,9 @@ function fnValidateForm() {
 
 function btnChange() {
 	var btnOne = document.getElementById('btnOne');
-	if (btnOne.value === "See More >") {
-		btnOne.value = 'See less <';
+	if (btnOne.innerHTML === "See More >") {
+		btnOne.innerHTML = 'See less <';
 	} else {
-		btnOne.value = 'See More >';
+		btnOne.innerHTML = 'See More >';
 	}
 }
