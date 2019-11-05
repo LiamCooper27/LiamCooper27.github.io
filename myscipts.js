@@ -36,9 +36,9 @@
 function btnChange() {
 	var btnOne = document.getElementById('btnOne');
 	btnOne.value = 'it works';
-	if (btnOne.innerHTML === "See More >") {
-		btnOne.innerHTML = 'See less <';
+	if (btnOne.value === "See More >") {
+		btnOne.value = 'See less <';
 	} else {
-		btnOne.innerHTML = 'See More >';
+		btnOne.value = 'See More >';
 	}
 }
