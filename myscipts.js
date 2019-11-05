@@ -38,6 +38,7 @@ function btnChange() {
 	//btnOne.value = 'it works';
 	if (btnOne.value == "See More >") {
 		btnOne.value = 'See less <';
+		btnOne.innerText = 'works!!!!!!'
 	} else {
 		btnOne.value = 'See More >';
 	}
