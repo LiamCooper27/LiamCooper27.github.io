@@ -35,6 +35,7 @@
 
 function btnChange() {
 	var btnOne = document.getElementById('btnOne');
+	btnOne.innerHTML = 'it works';
 	if (btnOne.innerHTML === "See More >") {
 		btnOne.innerHTML = 'See less <';
 	} else {
