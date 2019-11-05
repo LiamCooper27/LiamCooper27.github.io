@@ -49,7 +49,7 @@ function btnChange(button) {
 	//btnOne.value = 'it works';
 	if (btnOne.innerText == "See More >") {
 		//btnOne.value = 'See less <';
-		btnOne.innerText = 'See less <'
+		btnOne.innerText = 'See Less <'
 	} else {
 		btnOne.innerText = 'See More >';
 	}
